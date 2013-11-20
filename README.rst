@@ -29,13 +29,13 @@ Will provide you with a list of sub-commands to perform actual analysis.
 Installation
 ------------
 
-To install the tool obtain a copy from Github, get Composer__ and execute::
+To install the tool obtain a copy from Github, get Composer_ and execute::
 
     $ composer install
 
 After that, you can use ChangeTrack from ``src/bin/track``.
 
-__ http://getcomposer.org/doc/00-intro.md
+.. _Composer: http://getcomposer.org/doc/00-intro.md
 
 --------
 Commands
@@ -50,7 +50,9 @@ analyze
 The ``analyze`` command tracks changes of a PHP project throughout its version
 history (currently only Git is supported). The result is an XML document, that
 describes the version history in terms of class/method changes. For example,
-here is a part of the Twig__ project history::
+here is a part of the Twig_ project history::
+
+.. _Twig: https://github.com/fabpot/Twig
 
     <changes repository="https://github.com/fabpot/Twig">
       <!-- ... -->
@@ -132,8 +134,10 @@ for the methods which are most frequently affected by bugs.
 
 Besides the *regex* and *default* label providers, there's a *Github issue*
 label provider available, which uses your projects issue labels to determine a
-change label. An example configuration for vfsStream__ project looks like
+change label. An example configuration for vfsStream_ project looks like
 this::
+
+.. _vfsStream: https://github.com/mikey179/vfsStream
 
     revision_label_provider:
         chain:
